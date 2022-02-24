@@ -29,7 +29,7 @@ def search_loop():
         time.sleep(0.5)
     
     print(all_links)
-    with open("all_links.txt", "wb") as outfile:
+    with open("output.txt", "wb") as outfile:
         outfile.writelines("%s\n" % l for l in all_links)
 
 def get_thread_links(soup):
